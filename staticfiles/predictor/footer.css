@@ -1,0 +1,13 @@
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666; /* Light gray color */
+    padding: 10px 0;
+}
+
+footer strong {
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+}

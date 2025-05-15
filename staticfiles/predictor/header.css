@@ -1,0 +1,18 @@
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555; /* Gray color */
+    margin: 0;
+}

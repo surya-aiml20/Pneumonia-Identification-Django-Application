@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #d1e9fc, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+    color: #f1f1f1;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+body.dark-mode .container {
+    background: #333;
+    color: #f1f1f1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.6em;
+    color: #007bff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+body.dark-mode header h1 {
+    color: #4ca1af;
+}
+
+header #dark-mode-toggle {
+    margin-top: 15px;
+    padding: 8px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header #dark-mode-toggle:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.dark-mode .form-group label {
+    color: #4ca1af;
+}
+
+form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="file"]:hover {
+    background-color: #eef2f3;
+    border-color: #007bff;
+}
+
+form .btn {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Image Preview */
+#image-preview {
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#image-preview img:hover {
+    transform: scale(1.05);
+}
+
+/* Results */
+#result-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.result-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: #f1f9ff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    text-align: center;
+}
+
+body.dark-mode .result-card {
+    background: #444;
+}
+
+.result-card h2 {
+    font-size: 1.5em;
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+body.dark-mode .result-card h2, body.dark-mode .result-card p {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
